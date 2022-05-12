@@ -82,3 +82,11 @@ function porcentagem(a){
 
 //---------------------------------------------
 
+//Programa 8
+function par (a,b,c){
+
+    return a%2 === 0 ? true : b%2 === 0 ? true : c%2 ===0 ? true : false
+}//console.log(par (1,1,1))
+
+//---------------------------------------------
+
