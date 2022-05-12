@@ -48,6 +48,8 @@ function triangulo(a,b,c){
     return a>0 ? b>0 ? c>0 ? ((a+b+c) === 180 ? true : false) : "Digite angulos positivos" :"Digite angulos positivos":"Digite angulos positivos"
 }//console.log(triangulo (60,60,60))
 
+//---------------------------------------------
+
 //Programa 6
 function xadrez (str){
 
@@ -69,4 +71,14 @@ function xadrez (str){
         return "Digite sem acentos ou digite uma peça válida."
     }
 
-}console.log( xadrez ("peão"))
+}//console.log( xadrez ("peão"))
+
+//---------------------------------------------
+
+//Programa 7
+function porcentagem(a){
+    return a>=90 ? "A" : a>=80 ? "B" : a>=70 ? "C" : a>=60 ? "D" : a>= 50 ? "E" : "F"
+}//console.log(porcentagem(65))
+
+//---------------------------------------------
+
