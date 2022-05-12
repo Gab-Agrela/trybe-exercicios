@@ -105,3 +105,47 @@ function produto(custo,venda){
 
     return custo>0 ? venda>0 ? lucro : "Digite valores válidos" : "Digite valores válidos";
 }//console.log(produto (300,600))
+
+//---------------------------------------------
+
+//Programa 11
+function impostoRenda (a){
+    let salario = 0
+        if(a<=1556.94){
+            salario = a * 0.92
+        }else if (a<=2594.92){
+            salario = a * 0.91
+        }else if (a<=5189.82){
+            salario = a * 0.89
+        }else if (a>5189.82){
+            salario = a - 570.88
+        }
+    let salarioDescontado = 0
+        if (salario<=1903.98){
+            salarioDescontado = salario 
+        }else if (salario<=2826.65){
+            salarioDescontado = (salario * 0.075)-142.80
+        }else if (salario<=3751.05){
+            salarioDescontado = (salario * 0.15)-354.8
+        }else if (salario<=4664.68){
+            salarioDescontado = (salario * 0.225)-636.13
+        }else if (salario>4664.68){
+            salarioDescontado = (salario * 0.275)-869.36
+        }
+    let salarioFinal = salario - salarioDescontado
+    return salarioFinal
+}console.log(impostoRenda(3000))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
