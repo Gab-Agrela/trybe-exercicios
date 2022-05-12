@@ -35,3 +35,10 @@ function qualMaior2 (a,b,c){
     return maior>c ? maior : c
 }
 //console.log(qualMaior2 (1,4,3));
+
+//Programa 4
+
+function positivo(a){
+    return a>0 ? "Positivo" : "Negativo"
+}
+console.log(positivo(3));
