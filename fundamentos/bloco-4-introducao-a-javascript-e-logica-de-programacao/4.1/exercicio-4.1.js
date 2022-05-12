@@ -1,3 +1,5 @@
+//Programa 1
+
 function calculadora (a,operador,b){
     let resultado = null
     if (operador === "+"){
@@ -12,5 +14,18 @@ function calculadora (a,operador,b){
         resultado = a % b
     
     }return typeof(resultado) === "number" ? resultado : console.log("Digite um operador válido!")
+
+//console.log(calculadora(4,"*",2));
 }
-console.log(calculadora(4,"*",2));
+
+
+//Programa 2
+
+function qualMaior (a,b){
+
+    return a>b ? a : b
+
+//console.log(qualMaior (11,12));
+}
+
+
