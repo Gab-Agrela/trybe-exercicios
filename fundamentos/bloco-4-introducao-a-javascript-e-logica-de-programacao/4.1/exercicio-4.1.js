@@ -94,4 +94,14 @@ function par (a,b,c){
 function impar (a,b,c){
 
     return (a+b+c)%2 === 1? true : false
-}console.log(impar (1,1,1))
+}//console.log(impar (1,1,1))
+
+//---------------------------------------------
+
+//Programa 10
+function produto(custo,venda){
+    let custoProduto = custo*1.2;
+    let lucro = (venda - custoProduto)*1000
+
+    return custo>0 ? venda>0 ? lucro : "Digite valores válidos" : "Digite valores válidos";
+}//console.log(produto (300,600))
