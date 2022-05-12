@@ -85,8 +85,13 @@ function porcentagem(a){
 //Programa 8
 function par (a,b,c){
 
-    return a%2 === 0 ? true : b%2 === 0 ? true : c%2 ===0 ? true : false
-}//console.log(par (1,1,1))
+    return (a+b+c)%2 === 0? true : false
+}//console.log(par (2,1,1))
 
 //---------------------------------------------
 
+//Programa 9
+function impar (a,b,c){
+
+    return (a+b+c)%2 === 1? true : false
+}console.log(impar (1,1,1))
