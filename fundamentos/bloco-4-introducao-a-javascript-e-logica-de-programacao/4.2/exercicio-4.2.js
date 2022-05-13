@@ -54,3 +54,12 @@ function programa6(array){
 
 //--------------------------------------------------------------------
 
+//Programa 7
+function programa7(array){
+    let menor = 100000
+    for(let i=0; i<array.length; i+=1){
+        if(array[i]<array[i+1] && array[i]<menor){
+            menor = array[i]
+        }
+    }return menor
+}//console.log(programa7(array))
