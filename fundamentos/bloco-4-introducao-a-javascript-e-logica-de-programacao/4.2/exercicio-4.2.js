@@ -37,3 +37,20 @@ function programa5(array){
         }
     }return maior
 }//console.log(programa5(array))
+
+//--------------------------------------------------------------------
+
+//Programa 6
+function programa6(array){
+    let contador = 0
+    let impar = []
+    for(let i = 0; i<array.length; i+=1){
+        if(array[i]%2===1){
+            contador+=1
+            impar.push(array[i])
+        }
+    }return contador>0 ? impar : "Nenhum valor ímpar"
+}//console.log(programa6(array))
+
+//--------------------------------------------------------------------
+
