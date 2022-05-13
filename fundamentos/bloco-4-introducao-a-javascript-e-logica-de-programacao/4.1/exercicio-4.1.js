@@ -44,8 +44,8 @@ function positivo(a){
 
 //Programa 5
 function triangulo(a,b,c){
-
-    return a>0 ? b>0 ? c>0 ? ((a+b+c) === 180 ? true : false) : "Digite angulos positivos" :"Digite angulos positivos":"Digite angulos positivos"
+    let erro = "Digite angulos positivos"
+    return a>0 ? b>0 ? c>0 ? ((a+b+c) === 180 ? true : false) : erro  : erro : erro
 }//console.log(triangulo (60,60,60))
 
 //---------------------------------------------
@@ -134,7 +134,7 @@ function impostoRenda (a){
         }
     let salarioFinal = salario - salarioDescontado
     return salarioFinal
-}console.log(impostoRenda(3000))
+}//console.log(impostoRenda(3000))
 
 
 
