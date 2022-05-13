@@ -73,3 +73,14 @@ function programa8([]){
         numeros.push(i)
     }return numeros
 }//console.log(programa8([]))
+
+//--------------------------------------------------------------------
+
+//Programa 9 
+function programa9([]){
+    let numeros = programa8([]);
+    let divisao = [];
+    for(let i=0; i<numeros.length;i+=1){
+        divisao.push(numeros[i]/2)
+    }return divisao
+}//console.log(programa9([]))
