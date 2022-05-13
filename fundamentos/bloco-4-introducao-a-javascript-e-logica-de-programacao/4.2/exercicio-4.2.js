@@ -19,7 +19,7 @@ function programa2(array){
 
 //--------------------------------------------------------------------
 
-//Programa 3
+//Programa 3 e 4
 function programa3(array){
     let soma = programa2(array)
     let media = soma/array.length
@@ -28,3 +28,12 @@ function programa3(array){
 
 //--------------------------------------------------------------------
 
+//Programa 5
+function programa5(array){
+    let maior = 0
+    for(let i=0; i<array.length; i+=1){
+        if(array[i]>array[i+1] && array[i]>maior){
+            maior = array[i]
+        }
+    }return maior
+}//console.log(programa5(array))
