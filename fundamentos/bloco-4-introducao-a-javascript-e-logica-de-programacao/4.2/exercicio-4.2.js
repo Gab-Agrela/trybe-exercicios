@@ -84,3 +84,33 @@ function programa9([]){
         divisao.push(numeros[i]/2)
     }return divisao
 }//console.log(programa9([]))
+
+//--------------------------------------------------------------------
+
+//Programa Bonus 1
+function programaBonus1(array){
+    let sort = array.sort((a,b)=>a-b)
+    return sort
+}//console.log(programaBonus1(array))
+
+//--------------------------------------------------------------------
+
+//Programa Bonus 2
+function programaBonus2(array){
+    let sort = array.sort((a,b)=>b-a)
+    return sort
+}//console.log(programaBonus2(array))
+
+//--------------------------------------------------------------------
+
+//Programa Bonus 3
+function programaBonus3(array){
+    let newArray = [];
+    for(let i = 0;i<array.length;i+=1){
+        if(array[i+1]>0){
+            newArray.push(array[i]*array[i+1])
+        }else{
+            newArray.push(array[i]*2)
+        }
+    }return newArray
+}//console.log(programaBonus3(array))
