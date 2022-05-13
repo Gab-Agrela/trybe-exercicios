@@ -63,3 +63,13 @@ function programa7(array){
         }
     }return menor
 }//console.log(programa7(array))
+
+//--------------------------------------------------------------------
+
+//Programa 8
+function programa8([]){
+    let numeros = []
+    for(let i = 1; i<26;i+=1){
+        numeros.push(i)
+    }return numeros
+}//console.log(programa8([]))
