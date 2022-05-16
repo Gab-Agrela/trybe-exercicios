@@ -93,5 +93,29 @@ function bonus3(n){
 
 //Programa Bonus 4
 function bonus4(n){
-    
-}
+    let c1 = parseInt(n/2)
+    let c2 = parseInt(n-2*c1)
+        for(let i=2; i<=(n-parseInt(n/2)+1);i++){
+            console.log(' '.repeat(c1) + '*'.repeat(c2) + ' '.repeat(c1))
+            c1-=1
+            c2+=2
+        }
+}//bonus4(7)
+
+//-------------------------
+
+//Programa Bonus 5
+function bonus5(n){
+    let c1 = parseInt(n/2)
+    let c2 = parseInt(n-2*c1)
+    let c3 = 1
+    console.log(' '.repeat(c1) + '*'.repeat(c2) + ' '.repeat(c1))    
+    for(let i=2; i<(n-parseInt(n/2));i++){
+        c1= c1-1
+        console.log((' '.repeat(c1) + '*'.repeat(c2) + ' '.repeat(c3) + '*'.repeat(c2) + ' '.repeat(c1) ))  
+        
+        c3 = c3+2
+        
+    }
+    console.log('*'.repeat(n))   
+}bonus5(9)
