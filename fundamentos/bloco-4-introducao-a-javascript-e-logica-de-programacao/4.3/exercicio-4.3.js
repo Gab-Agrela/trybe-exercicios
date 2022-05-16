@@ -118,4 +118,15 @@ function bonus5(n){
         
     }
     console.log('*'.repeat(n))   
-}bonus5(9)
+}//bonus5(9)
+
+//---------------------
+
+//Programa Bonus 6
+function bonus6(n){
+    for(let i = 2; i<n;i+=1){
+        if(n%i===0){
+            return false
+         }
+    }return true
+}//console.log(bonus6(8))
