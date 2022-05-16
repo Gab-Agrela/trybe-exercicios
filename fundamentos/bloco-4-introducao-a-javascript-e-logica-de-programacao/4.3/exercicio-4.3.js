@@ -52,3 +52,46 @@ function programa5(n){
         
 return primo
 }//console.log(programa5(50))
+
+//-----------------------------------
+
+//Programa Bonus 1
+function bonus1(n){
+    let asterisco = '';
+    for(let index = 0; index<n; index+=1){
+        asterisco = asterisco + '*'
+    }for(let index = 0; index<n;index+=1){
+        console.log(asterisco)
+    }
+}//bonus1(3)
+
+//------------------------------
+
+//Programa Bonus 2
+function bonus2(n){
+    asterisco = ''
+    for(let index = 0; index<n;index+=1){
+        asterisco = asterisco + '*'
+        console.log(asterisco)
+    }
+}//bonus2(5)
+
+//------------------------------
+
+//Programa Bonus 3
+function bonus3(n){
+    let contador = n-1
+    let contador2 = 1
+        for(let i=0; i<n;i++){
+            console.log(' '.repeat(contador) + '*'.repeat(contador2))
+            contador--
+            contador2++
+        }
+}//bonus3(5)
+
+//-------------------------------------------------------------------------
+
+//Programa Bonus 4
+function bonus4(n){
+    
+}
