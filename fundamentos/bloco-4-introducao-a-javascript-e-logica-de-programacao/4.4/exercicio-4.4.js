@@ -112,3 +112,63 @@ function e8(){
     let obj = e7();
     console.log(obj['nome'] + ' tem ' + obj['livrosFavoritos'].length + ' livros favoritos');
 }//e8()
+
+//----------------------
+
+//Parte 2
+
+//Programa 2.1
+function e21(str){
+    let newStr = str.split('').reverse().join('');
+    return str===newStr ? true : false
+}//console.log(e21('banana'))
+
+//-------------------------------
+
+//Programa 2.2
+function e22(arr){
+    return arr.reduce((r,d,i)=> d>r ? r=i : r=r , r=0)
+}//console.log(e22([2, 3, 6, 7, 10, 1]))
+
+//--------------------------------------------
+
+//Programa 2.3
+function e23(arr){
+    return arr.reduce((r,d,i)=> d<r ? r=i : r=r , r=0)
+}//console.log(e23([2, 4, 6, 7, 10, 0, -3]))
+
+//-----------------------------------------------
+
+//Programa 2.4
+function e24(arr){
+    return arr.reduce((r,d,i)=> d.length>r.length ? r=d : r=r , r= '')
+}//console.log(e24(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
+
+//------------------------------------------------------------------------------
+
+//Programa 2.5
+function e25(arr){
+    let obj = arr.reduce((r,d,i)=> (r[d]=(r[d]||0)+1,r),{})
+    return Object.entries(obj).reduce((r,d,i)=> d[1]> r[0] ? (r[0]=d[1] , r[1]=d[0]) : r=r, r= [0,0])
+
+}//console.log(e25([2, 3, 2, 5, 8, 2, 3]))
+
+//------------------------------------------
+
+//Programa 2.6
+function e26(n){
+    let contador = 0
+    for(let i = 0; i<=n; i+=1){
+        contador= contador + i
+    }return contador
+}//console.log(e26(5))
+
+//----------------------
+
+//Programa 2.7
+function e27(str1,str2){
+    let test = ''
+    for(let i=0 ; i<str1.length-(str2.length); i+=1){
+        test = test + str1[i]
+    }return test+str2 === str1 ? true : false
+}//console.log(e27('joaofernando', 'do'))
