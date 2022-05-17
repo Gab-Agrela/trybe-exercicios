@@ -172,3 +172,42 @@ function e27(str1,str2){
         test = test + str1[i]
     }return test+str2 === str1 ? true : false
 }//console.log(e27('joaofernando', 'do'))
+
+//-----------------------------------------
+
+//Programa Bonus 1
+function bonus1(str){
+    let obj = {
+        'I' : 1,
+        'V' : 5,
+        'X' : 10,
+        'L' : 50,
+        'C' : 100,
+        'D' : 500,
+        'M' : 1000 };
+    let primeiro = obj[str[0].toUpperCase()];
+     if(str.length<=3){
+        if(str.length === 1){
+            return primeiro
+        }else if(str.length===2){
+            let segundo = obj[str[1].toUpperCase()];
+            if(primeiro<segundo){
+                return segundo-primeiro
+            }else if(primeiro>=segundo){
+                return segundo+primeiro
+            }
+        }else if(str.length===3){
+            let segundo = obj[str[1].toUpperCase()];
+            let terceiro = obj[str[2].toUpperCase()];
+            if(primeiro<=segundo && segundo<terceiro){
+                return terceiro - segundo - primeiro
+            }else if(primeiro<segundo && segundo>=terceiro){
+                return terceiro + segundo - primeiro
+            }else if (primeiro===segundo && segundo===terceiro){
+                return primeiro+segundo+terceiro
+            }
+        }
+    }
+}//console.log(bonus1('XCL'))
+
+//------------------------------
