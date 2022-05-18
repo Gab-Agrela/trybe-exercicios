@@ -211,3 +211,124 @@ function bonus1(str){
 }//console.log(bonus1('XCL'))
 
 //------------------------------
+
+//Programa Bonus 2
+function bonus2(vetor){
+    let par = [];
+    for(let i = 0; i<vetor.length;i+=1){
+        par.push(vetor[i].filter(d=>d%2===0 ? true : false));
+    }
+    let vetor2 = par.join(',').split(',');
+    return vetor2.map(d=>parseInt(d))
+}//console.log(bonus2([[1, 2], [3,4,5,6], [7,8,9,10]]))
+
+//-----------------------------------------------------------
+
+//Programa Bonus 3
+function bonus3(){
+    const basket = [
+        'Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva', 'Laranja',
+        'Jaca', 'Pera', 'Melancia', 'Uva', 'Laranja', 'Melancia',
+        'Banana', 'Uva', 'Pera', 'Abacate', 'Laranja', 'Abacate',
+        'Banana', 'Melancia', 'Laranja', 'Laranja', 'Jaca', 'Uva',
+        'Banana', 'Uva', 'Laranja', 'Pera', 'Melancia', 'Uva',
+        'Jaca', 'Banana', 'Pera', 'Abacate', 'Melancia', 'Melancia',
+        'Laranja', 'Pera', 'Banana', 'Jaca', 'Laranja', 'Melancia',
+        'Abacate', 'Abacate', 'Pera', 'Melancia', 'Banana', 'Banana',
+        'Abacate', 'Uva', 'Laranja', 'Banana', 'Abacate', 'Uva',
+        'Uva', 'Abacate', 'Abacate', 'Melancia', 'Uva', 'Jaca',
+        'Uva', 'Banana', 'Abacate', 'Banana', 'Uva', 'Banana',
+        'Laranja', 'Laranja', 'Jaca', 'Jaca', 'Abacate', 'Jaca',
+        'Laranja', 'Melancia', 'Pera', 'Jaca', 'Melancia', 'Uva',
+        'Abacate', 'Jaca', 'Jaca', 'Abacate', 'Uva', 'Laranja',
+        'Pera', 'Melancia', 'Jaca', 'Pera', 'Laranja', 'Jaca',
+        'Pera', 'Melancia', 'Jaca', 'Banana', 'Laranja', 'Jaca',
+        'Banana', 'Pera', 'Abacate', 'Uva',
+      ];
+    let cesta = basket.reduce((r,d)=> (r[d]=(r[d]||0)+1,r),{});
+    console.log("Sua cesta possui: ");
+    for(let i in cesta){
+        console.log(cesta[i] + " : " + i + "s")
+    }
+}//bonus3()
+
+//--------------------
+
+//Programa Bonus 4
+function bonus4(){
+    let moradores = {
+        blocoUm: [
+          {
+            nome: 'Luiza',
+            sobrenome: 'Guimarães',
+            andar: 10,
+            apartamento: 1005,
+          },
+          {
+            nome: 'William',
+            sobrenome: 'Albuquerque',
+            andar: 5,
+            apartamento: 502,
+          },
+        ],
+        blocoDois: [
+          {
+            nome: 'Murilo',
+            sobrenome: 'Ferraz',
+            andar: 8,
+            apartamento: 804,
+          },
+          {
+            nome: 'Zoey',
+            sobrenome: 'Brooks',
+            andar: 1,
+            apartamento: 101,
+          },
+        ],
+    };
+    return console.log("O morador do bloco 2 de nome " + moradores['blocoDois'][1]['nome'] + " " + moradores['blocoDois'][1]['sobrenome'] + " mora no " + moradores['blocoDois'][1]['andar'] + "º andar, apartamento " + moradores['blocoDois'][1]['apartamento'] )
+
+}//bonus4()
+
+//-----------------------
+
+//Programa Bonus 5
+function bonus5(){
+    let moradores = {
+        blocoUm: [
+          {
+            nome: 'Luiza',
+            sobrenome: 'Guimarães',
+            andar: 10,
+            apartamento: 1005,
+          },
+          {
+            nome: 'William',
+            sobrenome: 'Albuquerque',
+            andar: 5,
+            apartamento: 502,
+          },
+        ],
+        blocoDois: [
+          {
+            nome: 'Murilo',
+            sobrenome: 'Ferraz',
+            andar: 8,
+            apartamento: 804,
+          },
+          {
+            nome: 'Zoey',
+            sobrenome: 'Brooks',
+            andar: 1,
+            apartamento: 101,
+          },
+        ],
+    };
+
+    for(let i=0;i<moradores['blocoUm'].length;i+=1){
+        console.log(moradores['blocoUm'][i]['nome'] + " " + moradores['blocoUm'][i]['sobrenome'])
+    }
+    for(let i=0;i<moradores['blocoDois'].length;i+=1){
+        console.log(moradores['blocoDois'][i]['nome'] + " " + moradores['blocoDois'][i]['sobrenome'])
+    }
+}//bonus5()
