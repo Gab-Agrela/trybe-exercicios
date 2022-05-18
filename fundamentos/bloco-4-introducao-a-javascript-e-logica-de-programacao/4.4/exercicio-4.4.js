@@ -332,3 +332,5 @@ function bonus5(){
         console.log(moradores['blocoDois'][i]['nome'] + " " + moradores['blocoDois'][i]['sobrenome'])
     }
 }//bonus5()
+
+//----------------------
