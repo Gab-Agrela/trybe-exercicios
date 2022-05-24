@@ -58,12 +58,12 @@ function createDaysOfTheWeek() {
     if (holiday[0].style.background === '' || holiday[0].style.background === 'rgb(238, 238, 238)'){
       for(let i = 0; i<holiday.length ; i+=1){
         holiday[i].style.background = 'green';
-        holiday[i].style.color = 'rgb(238, 238, 238)';
+        
       }
     }else {
       for(let index = 0; index<holiday.length ; index+=1){
         holiday[index].style.background = 'rgb(238, 238, 238)';
-        holiday[index].style.color = '#777';
+        
       }
     }
   })
@@ -148,3 +148,37 @@ function colorOfActivies (){
   })
   }
 }colorOfActivies()
+
+let inputUl = document.createElement('ul');
+inputUl.className = 'input-ul'
+let inputContainer = document.querySelector('.input-container');
+inputContainer.appendChild(inputUl);
+
+let btnAdd = document.querySelector('#btn-add');
+btnAdd.addEventListener('click',function () {
+  let input = document.querySelector('#task-input');
+  if(input.value === ''){
+    alert('Erro')
+  }else{
+  let li = document.createElement('li');
+  li.className = 'ul-li'
+  li.innerText = input.value;
+  document.querySelector('.input-ul').appendChild(li)
+  input.value = ''
+  }
+})
+
+document.addEventListener('keypress', function(e){
+  if(e.keyCode == 13){
+    let input = document.querySelector('#task-input');
+    if(input.value === ''){
+      alert('Erro')
+    }else{
+    let li = document.createElement('li');
+    li.className = 'ul-li'
+    li.innerText = input.value;
+    document.querySelector('.input-ul').appendChild(li)
+    input.value = ''
+    }
+  }
+}, false);
