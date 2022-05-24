@@ -98,3 +98,53 @@ function createDaysOfTheWeek() {
     }
   })
 
+
+let ul = document.querySelector('#days').children;
+
+function zoom (){
+  for(let i = 0; i<ul.length; i+=1){
+    ul[i].addEventListener('mouseover', (event)=>event.target.style.fontSize = '24px')
+  }
+}zoom()
+
+function zoom2 (){
+  for(let i = 0; i<ul.length; i+=1){
+    ul[i].addEventListener('mouseout', (event)=>event.target.style.fontSize = '20px')
+  }
+}zoom2()
+
+function addTarefa (str){
+  let span = document.createElement('span');
+  let div = document.querySelector('.my-tasks')
+  span.innerHTML = str
+  div.appendChild(span)
+}addTarefa('Cozinhar')
+
+function addLegenda(str){
+  let div = document.createElement('div');
+  div.style.background = str;
+  div.className = 'task'
+  let pai = document.querySelector('.my-tasks');
+  pai.appendChild(div)
+  
+  
+}let cor = 'blue'
+addLegenda(cor)
+let divTask = document.querySelector('.my-tasks').children[2];
+
+divTask.addEventListener('click', function (){
+  if (divTask.classList.length === 1){
+    divTask.classList.add('selected')
+  }else {
+    divTask.classList.remove('selected')
+  }
+})
+
+function colorOfActivies (){
+  for(let i = 0; i<ul.length; i+=1){
+    ul[i].addEventListener('click', (event)=> {if(event.target.style.color === '' || event.target.style.color === 'rgb(119,119,119)' ){
+      event.target.style.color = cor
+    }else {event.target.style.color = 'rgb(119,119,119)'}
+  })
+  }
+}colorOfActivies()
