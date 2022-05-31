@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    color: gray;
+}
+
+main {
+    border : 2px solid black;
+    margin: 5px;
+    padding: 15px;
+    max-width: 800px;
+    line-height: 35px;
+}
+
+textarea{
+    width: 796px;
+}
