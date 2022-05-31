@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    
+<div id="fundoCalculadoraField" ><!--Calculadora-->
+
+    <h2> Calculadora </h2>
+
+    Número 1:<input type="number" id="elementoA"><br>
+    Operação:<select type="text" id="multiplicador">
+        <option value="+"> Somar </option>
+        <option value="-"> Subtrair </option>
+        <option value="*"> Multiplicar </option>
+        <option value="/"> Dividir </option> 
+        </select><br>
+        Número 2:<input type="number" id="elementoB"> 
+        <button type="button" onclick="calculadora()" > Calcular </button><br>
+        Resultado:<input type="text" id="resultado">
+    
+     
+</div><br><hr>
+
+<div id="fundoSecretNumberField"><!--Número Secreto-->
+    <h2> Número Secreto </h2>
+
+    Digite um número de 1 a 10:<input type="number" id="numeroSecreto">
+    <button type="button" onclick="numeroSecreto()" > Adivinhar </button><br>
+    Resposta:<input type="text" id="imprimeNumeroSecreto" size="28">
+</div><br><hr>
+
+<div id="fundoTasksField"><!--Lista De Tarefas--> 
+    <h2>Lista de tarefas</h2>
+    <input type="text" id="tarefa">
+    <button type="button"  onclick="tasks()"> Adicionar Tarefa </button><br><br>
+    <input type="text" id="removerTarefa">
+    <button type="button"  onclick="removerTask()"> Remover Tarefa </button>
+    <div id="mensagemErro"></div>
+    <ol type="I">
+        <li> <input type="text" id="task0"> </li>
+        <li> <input type="text" id="task1"> </li>
+        <li> <input type="text" id="task2"> </li>
+        <li> <input type="text" id="task3"> </li>
+        <li> <input type="text" id="task4"> </li>
+
+    </ol>
+</div><hr>
+
+<div id="fundoSeletorDeCores"><!--Seletor de cores-->
+    <h2> Seletor de cores </h2>
+    
+    Escolha um projeto para mudar de cor
+    <select name="Campo" id="field" onclick="escolhaOCampo()">
+        <option value=""> Escolha </option>
+        <option value="CalculadoraField"> Calculadora </option>
+        <option value="SecretNumberField"> Número Secreto </option>
+        <option value="TasksField"> Lista de Tarefas </option>
+    </select><br>
+    Escolha a cor
+    <select name="Cor" id="color" onclick="corDeFundo()">
+        <option value=""> Escolha </option>
+        <option value="red"> Vermelho </option>
+        <option value="green"> Verde </option>
+        <option value="orange"> Laranja </option>
+        <option value="purple"> Roxo </option>
+        <option value="gray"> Cinza </option>
+        <option value="blue"> Azul </option>
+    </select>
+
+</div><br><hr>
+
+<div id="fundoSeletorDeFontes"><!--Seletor de fontes-->
+    <h2> Seletor de Fonte</h2>
+   
+    Escolha um Campo
+    <select name="Campo" id="field2" onclick="escolhaOCampo2()">
+        <option value=""> Escolha </option>
+        <option value="CalculadoraField"> Calculadora </option>
+        <option value="SecretNumberField"> Número Secreto </option>
+        <option value="TasksField"> Lista de Tarefas </option>
+        <option value="SeletorDeCores"> Seletor de Cores </option>
+    </select><br>
+    Selecione um tipo de fonte
+    <select name="Fonte" id="fonte" onclick="escolhaAFonte()">
+        <option value=""> Escolha </option>
+        <option value="Comic Sans MS"> Comic Sans MS </option>
+        <option value="Impact"> Impact </option>
+        <option value="Helvetica"> Helvetica </option>
+    </select><br>
+
+
+</div><br><hr>
