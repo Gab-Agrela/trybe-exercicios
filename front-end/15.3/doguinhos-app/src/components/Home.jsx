@@ -6,14 +6,14 @@ import Loading from './Loading';
 
 class Home extends Component {
   render () {
-    const { loading, imagem, fetchImg } = this.props;
+    const { loading, imagem, dispatch } = this.props;
     return (
       <div>
         {loading
         ? <Loading />
         : (
           <>
-            <button type='button' onClick={fetchImg}>Enviar</button>
+            <button type='button' onClick={() => dispatch(fetchImage()) }>Enviar</button>
             <img className='imagem' src={imagem} alt="dog_image" />
           </>
         )}
@@ -27,8 +27,4 @@ const mapStateToProps = (state) => ({
   imagem: state.reducer.img,
 })
 
-const mapDispatchToProps = (dispatch) => ({
-  fetchImg: () => dispatch(fetchImage())
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, null)(Home)

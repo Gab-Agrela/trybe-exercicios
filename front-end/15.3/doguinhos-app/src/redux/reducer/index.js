@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
 const initialState = {
-  img: 'https://img.freepik.com/vetores-premium/clique-aqui-botao-com-ponteiro-de-mao-clicando-botao-de-clique-moderno-com-cursor-de-mouse-de-computador-web-bu_435184-1093.jpg?w=2000',
+  img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6PbfODOD4A46f6R2eG4576p3dgkGzvq7ACxcTuOWeLnewxO7ZXXty5ZHjp9VQUxQauA&usqp=CAU',
   loading: false,
 }
 
