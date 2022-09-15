@@ -1,4 +1,4 @@
-// ./components/ColorBox.js
+// ./mponents/ColorBox.js
 import React from 'react';
 import '../styles/box.css';
 import { MyContext } from '../utils/MyContext';
